@@ -9,9 +9,9 @@ builder.Services.AddDbContext<SistemaAcademicoContext>(options =>
 builder.Services.AddControllersWithViews();
 
 //Build do banco de dados Sql
-builder.Services.AddDbContext<SistemaAcademicoContext>(options => options.UseSqlServer(
-    builder.Configuration.GetConnectionString("SistemaAcademicoContext")
-    ));
+builder.Services.AddDbContext<SistemaAcademicoContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SistemaAcademicoContext")));
+
+
 
 var app = builder.Build();
 

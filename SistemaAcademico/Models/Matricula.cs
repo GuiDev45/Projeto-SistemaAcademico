@@ -2,6 +2,7 @@
 {
     public class Matricula
     {
+        public int Id { get; set; }
         public DateTime Data { get; set; }
         public int Prestacoes { get; set; }
 
@@ -12,8 +13,9 @@
         {
         }
 
-        public Matricula(DateTime data, int prestacoes)
+        public Matricula(int id, DateTime data, int prestacoes)
         {
+            Id = id;
             Data = data;
             Prestacoes = prestacoes;
         }

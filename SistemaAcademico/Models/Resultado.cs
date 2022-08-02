@@ -2,6 +2,7 @@
 {
     public class Resultado
     {
+        public int Id { get; set; }
         public double NotaObtida { get; set; }
 
         public ICollection<Aluno> Alunos { get; set; }
@@ -11,8 +12,9 @@
         {
         }
 
-        public Resultado(double notaObtida)
+        public Resultado(int id, double notaObtida)
         {
+            Id = id;
             NotaObtida = notaObtida;
         }
 
